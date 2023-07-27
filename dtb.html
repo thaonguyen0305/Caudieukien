@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Nhập vào điểm học kỳ 1:
+        <input type="number" id="score1"></p>    
+    <p>Nhập vào điểm học kỳ 2:
+        <input type="number" id="score2"></p>
+    <button onclick="Caculator()">Kết quả</button>
+    <p id="result"></p>
+    <script>
+        function Caculator() {
+    let score1 = document.getElementById("score1").value;
+    let score2 = document.getElementById("score2").value;
+    let scoremid = (Number(score1)+Number(score2))/2;
+    if(scoremid >=6.5){
+        document.getElementById("result").innerHTML = "ScoreMid " + scoremid + "- Pass"
+    }
+    else{
+        document.getElementById("result").innerHTML = "ScoreMid " + scoremid + "- Fail"
+    }}
+    </script>
+
+</body>
+</html>
